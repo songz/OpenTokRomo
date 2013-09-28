@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E43C855517F6E310000B9C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C855417F6E310000B9C01 /* Foundation.framework */; };
+		E43C855717F6E310000B9C01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C855617F6E310000B9C01 /* CoreGraphics.framework */; };
+		E43C855917F6E310000B9C01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C855817F6E310000B9C01 /* UIKit.framework */; };
+		E43C855F17F6E310000B9C01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E43C855D17F6E310000B9C01 /* InfoPlist.strings */; };
+		E43C856117F6E310000B9C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C856017F6E310000B9C01 /* main.m */; };
+		E43C856517F6E310000B9C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C856417F6E310000B9C01 /* AppDelegate.m */; };
+		E43C856817F6E310000B9C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43C856617F6E310000B9C01 /* Main.storyboard */; };
+		E43C856B17F6E310000B9C01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C856A17F6E310000B9C01 /* ViewController.m */; };
+		E43C856D17F6E310000B9C01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43C856C17F6E310000B9C01 /* Images.xcassets */; };
+		E43C857417F6E310000B9C01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C857317F6E310000B9C01 /* XCTest.framework */; };
+		E43C857517F6E310000B9C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C855417F6E310000B9C01 /* Foundation.framework */; };
+		E43C857617F6E311000B9C01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C855817F6E310000B9C01 /* UIKit.framework */; };
+		E43C857E17F6E311000B9C01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E43C857C17F6E311000B9C01 /* InfoPlist.strings */; };
+		E43C858017F6E311000B9C01 /* OpenTokRomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C857F17F6E311000B9C01 /* OpenTokRomoTests.m */; };
+		E43C859717F6E3F0000B9C01 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858917F6E3F0000B9C01 /* CoreTelephony.framework */; };
+		E43C859817F6E3F0000B9C01 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858A17F6E3F0000B9C01 /* MobileCoreServices.framework */; };
+		E43C859917F6E3F0000B9C01 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858B17F6E3F0000B9C01 /* CFNetwork.framework */; };
+		E43C859A17F6E3F0000B9C01 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858C17F6E3F0000B9C01 /* SystemConfiguration.framework */; };
+		E43C859B17F6E3F0000B9C01 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858D17F6E3F0000B9C01 /* CoreMedia.framework */; };
+		E43C859C17F6E3F0000B9C01 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858E17F6E3F0000B9C01 /* Security.framework */; };
+		E43C859D17F6E3F0000B9C01 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C858F17F6E3F0000B9C01 /* AudioToolbox.framework */; };
+		E43C859E17F6E3F0000B9C01 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859017F6E3F0000B9C01 /* CoreAudio.framework */; };
+		E43C859F17F6E3F0000B9C01 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859117F6E3F0000B9C01 /* CoreVideo.framework */; };
+		E43C85A017F6E3F0000B9C01 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859217F6E3F0000B9C01 /* OpenGLES.framework */; };
+		E43C85A117F6E3F0000B9C01 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859317F6E3F0000B9C01 /* libz.dylib */; };
+		E43C85A217F6E3F0000B9C01 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859417F6E3F0000B9C01 /* libstdc++.dylib */; };
+		E43C85A317F6E3F0000B9C01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859517F6E3F0000B9C01 /* QuartzCore.framework */; };
+		E43C85A417F6E3F0000B9C01 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C859617F6E3F0000B9C01 /* AVFoundation.framework */; };
+		E43C85A717F6E3FB000B9C01 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C85A517F6E3FB000B9C01 /* ExternalAccessory.framework */; };
+		E43C85A817F6E3FB000B9C01 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C85A617F6E3FB000B9C01 /* CoreMotion.framework */; };
+		E43C85AB17F6E452000B9C01 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C85A917F6E452000B9C01 /* Opentok.framework */; };
+		E43C85AC17F6E452000B9C01 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43C85AA17F6E452000B9C01 /* RMCore.framework */; };
+		E43C85AE17F6E467000B9C01 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E43C85AD17F6E467000B9C01 /* opentok.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E43C857717F6E311000B9C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43C854917F6E310000B9C01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43C855017F6E310000B9C01;
+			remoteInfo = OpenTokRomo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E43C855117F6E310000B9C01 /* OpenTokRomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokRomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43C855417F6E310000B9C01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E43C855617F6E310000B9C01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E43C855817F6E310000B9C01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E43C855C17F6E310000B9C01 /* OpenTokRomo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTokRomo-Info.plist"; sourceTree = "<group>"; };
+		E43C855E17F6E310000B9C01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E43C856017F6E310000B9C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E43C856217F6E310000B9C01 /* OpenTokRomo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenTokRomo-Prefix.pch"; sourceTree = "<group>"; };
+		E43C856317F6E310000B9C01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E43C856417F6E310000B9C01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E43C856717F6E310000B9C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43C856917F6E310000B9C01 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E43C856A17F6E310000B9C01 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E43C856C17F6E310000B9C01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E43C857217F6E310000B9C01 /* OpenTokRomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTokRomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43C857317F6E310000B9C01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E43C857B17F6E311000B9C01 /* OpenTokRomoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTokRomoTests-Info.plist"; sourceTree = "<group>"; };
+		E43C857D17F6E311000B9C01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E43C857F17F6E311000B9C01 /* OpenTokRomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTokRomoTests.m; sourceTree = "<group>"; };
+		E43C858917F6E3F0000B9C01 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E43C858A17F6E3F0000B9C01 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E43C858B17F6E3F0000B9C01 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E43C858C17F6E3F0000B9C01 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E43C858D17F6E3F0000B9C01 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E43C858E17F6E3F0000B9C01 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E43C858F17F6E3F0000B9C01 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E43C859017F6E3F0000B9C01 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E43C859117F6E3F0000B9C01 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E43C859217F6E3F0000B9C01 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E43C859317F6E3F0000B9C01 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E43C859417F6E3F0000B9C01 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		E43C859517F6E3F0000B9C01 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E43C859617F6E3F0000B9C01 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E43C85A517F6E3FB000B9C01 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		E43C85A617F6E3FB000B9C01 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E43C85A917F6E452000B9C01 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
+		E43C85AA17F6E452000B9C01 /* RMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RMCore.framework; sourceTree = "<group>"; };
+		E43C85AD17F6E467000B9C01 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = Opentok.framework/Versions/A/Resources/opentok.bundle; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43C854E17F6E310000B9C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C85A717F6E3FB000B9C01 /* ExternalAccessory.framework in Frameworks */,
+				E43C85AB17F6E452000B9C01 /* Opentok.framework in Frameworks */,
+				E43C85A317F6E3F0000B9C01 /* QuartzCore.framework in Frameworks */,
+				E43C859B17F6E3F0000B9C01 /* CoreMedia.framework in Frameworks */,
+				E43C85AC17F6E452000B9C01 /* RMCore.framework in Frameworks */,
+				E43C859917F6E3F0000B9C01 /* CFNetwork.framework in Frameworks */,
+				E43C85A217F6E3F0000B9C01 /* libstdc++.dylib in Frameworks */,
+				E43C859A17F6E3F0000B9C01 /* SystemConfiguration.framework in Frameworks */,
+				E43C85A017F6E3F0000B9C01 /* OpenGLES.framework in Frameworks */,
+				E43C85A817F6E3FB000B9C01 /* CoreMotion.framework in Frameworks */,
+				E43C859717F6E3F0000B9C01 /* CoreTelephony.framework in Frameworks */,
+				E43C855717F6E310000B9C01 /* CoreGraphics.framework in Frameworks */,
+				E43C855917F6E310000B9C01 /* UIKit.framework in Frameworks */,
+				E43C859E17F6E3F0000B9C01 /* CoreAudio.framework in Frameworks */,
+				E43C859817F6E3F0000B9C01 /* MobileCoreServices.framework in Frameworks */,
+				E43C85A417F6E3F0000B9C01 /* AVFoundation.framework in Frameworks */,
+				E43C85A117F6E3F0000B9C01 /* libz.dylib in Frameworks */,
+				E43C859D17F6E3F0000B9C01 /* AudioToolbox.framework in Frameworks */,
+				E43C859C17F6E3F0000B9C01 /* Security.framework in Frameworks */,
+				E43C855517F6E310000B9C01 /* Foundation.framework in Frameworks */,
+				E43C859F17F6E3F0000B9C01 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43C856F17F6E310000B9C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C857417F6E310000B9C01 /* XCTest.framework in Frameworks */,
+				E43C857617F6E311000B9C01 /* UIKit.framework in Frameworks */,
+				E43C857517F6E310000B9C01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E43C854817F6E310000B9C01 = {
+			isa = PBXGroup;
+			children = (
+				E43C855A17F6E310000B9C01 /* OpenTokRomo */,
+				E43C857917F6E311000B9C01 /* OpenTokRomoTests */,
+				E43C855317F6E310000B9C01 /* Frameworks */,
+				E43C855217F6E310000B9C01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E43C855217F6E310000B9C01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43C855117F6E310000B9C01 /* OpenTokRomo.app */,
+				E43C857217F6E310000B9C01 /* OpenTokRomoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43C855317F6E310000B9C01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43C85A917F6E452000B9C01 /* Opentok.framework */,
+				E43C85AA17F6E452000B9C01 /* RMCore.framework */,
+				E43C85A517F6E3FB000B9C01 /* ExternalAccessory.framework */,
+				E43C85A617F6E3FB000B9C01 /* CoreMotion.framework */,
+				E43C858917F6E3F0000B9C01 /* CoreTelephony.framework */,
+				E43C858A17F6E3F0000B9C01 /* MobileCoreServices.framework */,
+				E43C858B17F6E3F0000B9C01 /* CFNetwork.framework */,
+				E43C858C17F6E3F0000B9C01 /* SystemConfiguration.framework */,
+				E43C858D17F6E3F0000B9C01 /* CoreMedia.framework */,
+				E43C858E17F6E3F0000B9C01 /* Security.framework */,
+				E43C858F17F6E3F0000B9C01 /* AudioToolbox.framework */,
+				E43C859017F6E3F0000B9C01 /* CoreAudio.framework */,
+				E43C859117F6E3F0000B9C01 /* CoreVideo.framework */,
+				E43C859217F6E3F0000B9C01 /* OpenGLES.framework */,
+				E43C859317F6E3F0000B9C01 /* libz.dylib */,
+				E43C859417F6E3F0000B9C01 /* libstdc++.dylib */,
+				E43C859517F6E3F0000B9C01 /* QuartzCore.framework */,
+				E43C859617F6E3F0000B9C01 /* AVFoundation.framework */,
+				E43C855417F6E310000B9C01 /* Foundation.framework */,
+				E43C855617F6E310000B9C01 /* CoreGraphics.framework */,
+				E43C855817F6E310000B9C01 /* UIKit.framework */,
+				E43C857317F6E310000B9C01 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E43C855A17F6E310000B9C01 /* OpenTokRomo */ = {
+			isa = PBXGroup;
+			children = (
+				E43C856317F6E310000B9C01 /* AppDelegate.h */,
+				E43C856417F6E310000B9C01 /* AppDelegate.m */,
+				E43C856617F6E310000B9C01 /* Main.storyboard */,
+				E43C856917F6E310000B9C01 /* ViewController.h */,
+				E43C856A17F6E310000B9C01 /* ViewController.m */,
+				E43C856C17F6E310000B9C01 /* Images.xcassets */,
+				E43C855B17F6E310000B9C01 /* Supporting Files */,
+			);
+			path = OpenTokRomo;
+			sourceTree = "<group>";
+		};
+		E43C855B17F6E310000B9C01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E43C85AD17F6E467000B9C01 /* opentok.bundle */,
+				E43C855C17F6E310000B9C01 /* OpenTokRomo-Info.plist */,
+				E43C855D17F6E310000B9C01 /* InfoPlist.strings */,
+				E43C856017F6E310000B9C01 /* main.m */,
+				E43C856217F6E310000B9C01 /* OpenTokRomo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E43C857917F6E311000B9C01 /* OpenTokRomoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E43C857F17F6E311000B9C01 /* OpenTokRomoTests.m */,
+				E43C857A17F6E311000B9C01 /* Supporting Files */,
+			);
+			path = OpenTokRomoTests;
+			sourceTree = "<group>";
+		};
+		E43C857A17F6E311000B9C01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E43C857B17F6E311000B9C01 /* OpenTokRomoTests-Info.plist */,
+				E43C857C17F6E311000B9C01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43C855017F6E310000B9C01 /* OpenTokRomo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43C858317F6E311000B9C01 /* Build configuration list for PBXNativeTarget "OpenTokRomo" */;
+			buildPhases = (
+				E43C854D17F6E310000B9C01 /* Sources */,
+				E43C854E17F6E310000B9C01 /* Frameworks */,
+				E43C854F17F6E310000B9C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTokRomo;
+			productName = OpenTokRomo;
+			productReference = E43C855117F6E310000B9C01 /* OpenTokRomo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E43C857117F6E310000B9C01 /* OpenTokRomoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43C858617F6E311000B9C01 /* Build configuration list for PBXNativeTarget "OpenTokRomoTests" */;
+			buildPhases = (
+				E43C856E17F6E310000B9C01 /* Sources */,
+				E43C856F17F6E310000B9C01 /* Frameworks */,
+				E43C857017F6E310000B9C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43C857817F6E311000B9C01 /* PBXTargetDependency */,
+			);
+			name = OpenTokRomoTests;
+			productName = OpenTokRomoTests;
+			productReference = E43C857217F6E310000B9C01 /* OpenTokRomoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43C854917F6E310000B9C01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Song Zheng";
+				TargetAttributes = {
+					E43C857117F6E310000B9C01 = {
+						TestTargetID = E43C855017F6E310000B9C01;
+					};
+				};
+			};
+			buildConfigurationList = E43C854C17F6E310000B9C01 /* Build configuration list for PBXProject "OpenTokRomo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43C854817F6E310000B9C01;
+			productRefGroup = E43C855217F6E310000B9C01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43C855017F6E310000B9C01 /* OpenTokRomo */,
+				E43C857117F6E310000B9C01 /* OpenTokRomoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43C854F17F6E310000B9C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C856D17F6E310000B9C01 /* Images.xcassets in Resources */,
+				E43C855F17F6E310000B9C01 /* InfoPlist.strings in Resources */,
+				E43C85AE17F6E467000B9C01 /* opentok.bundle in Resources */,
+				E43C856817F6E310000B9C01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43C857017F6E310000B9C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C857E17F6E311000B9C01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43C854D17F6E310000B9C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C856B17F6E310000B9C01 /* ViewController.m in Sources */,
+				E43C856517F6E310000B9C01 /* AppDelegate.m in Sources */,
+				E43C856117F6E310000B9C01 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43C856E17F6E310000B9C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43C858017F6E311000B9C01 /* OpenTokRomoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E43C857817F6E311000B9C01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43C855017F6E310000B9C01 /* OpenTokRomo */;
+			targetProxy = E43C857717F6E311000B9C01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43C855D17F6E310000B9C01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43C855E17F6E310000B9C01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E43C856617F6E310000B9C01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43C856717F6E310000B9C01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43C857C17F6E311000B9C01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43C857D17F6E311000B9C01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43C858117F6E311000B9C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		E43C858217F6E311000B9C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		E43C858417F6E311000B9C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/song/CloudStorage/Dropbox/Tokbox/Code/demos/OpenTokRomo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTokRomo/OpenTokRomo-Prefix.pch";
+				INFOPLIST_FILE = "OpenTokRomo/OpenTokRomo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E43C858517F6E311000B9C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/song/CloudStorage/Dropbox/Tokbox/Code/demos/OpenTokRomo,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTokRomo/OpenTokRomo-Prefix.pch";
+				INFOPLIST_FILE = "OpenTokRomo/OpenTokRomo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E43C858717F6E311000B9C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenTokRomo.app/OpenTokRomo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTokRomo/OpenTokRomo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenTokRomoTests/OpenTokRomoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E43C858817F6E311000B9C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenTokRomo.app/OpenTokRomo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTokRomo/OpenTokRomo-Prefix.pch";
+				INFOPLIST_FILE = "OpenTokRomoTests/OpenTokRomoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43C854C17F6E310000B9C01 /* Build configuration list for PBXProject "OpenTokRomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43C858117F6E311000B9C01 /* Debug */,
+				E43C858217F6E311000B9C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43C858317F6E311000B9C01 /* Build configuration list for PBXNativeTarget "OpenTokRomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43C858417F6E311000B9C01 /* Debug */,
+				E43C858517F6E311000B9C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E43C858617F6E311000B9C01 /* Build configuration list for PBXNativeTarget "OpenTokRomoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43C858717F6E311000B9C01 /* Debug */,
+				E43C858817F6E311000B9C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43C854917F6E310000B9C01 /* Project object */;
+}
